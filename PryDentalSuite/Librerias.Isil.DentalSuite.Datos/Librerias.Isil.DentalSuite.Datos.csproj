@@ -42,6 +42,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ConexionADO.cs" />
+    <Compile Include="EspecialidadADO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="UsuarioADO.cs" />
   </ItemGroup>
