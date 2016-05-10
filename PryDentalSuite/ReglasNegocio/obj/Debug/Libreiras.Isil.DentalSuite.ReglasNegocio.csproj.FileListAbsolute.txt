@@ -1,0 +1,9 @@
+C:\Users\Jeff\Source\Repos\DSW2_ISIL\PryDentalSuite\ReglasNegocio\bin\Debug\ReglasNegocio.dll
+C:\Users\Jeff\Source\Repos\DSW2_ISIL\PryDentalSuite\ReglasNegocio\bin\Debug\ReglasNegocio.pdb
+C:\Users\Jeff\Source\Repos\DSW2_ISIL\PryDentalSuite\ReglasNegocio\bin\Debug\Librerias.Isil.DentalSuite.Datos.dll
+C:\Users\Jeff\Source\Repos\DSW2_ISIL\PryDentalSuite\ReglasNegocio\bin\Debug\Librerias.Isil.DentalSuite.Entidades.dll
+C:\Users\Jeff\Source\Repos\DSW2_ISIL\PryDentalSuite\ReglasNegocio\bin\Debug\Librerias.Isil.DentalSuite.Datos.pdb
+C:\Users\Jeff\Source\Repos\DSW2_ISIL\PryDentalSuite\ReglasNegocio\bin\Debug\Librerias.Isil.DentalSuite.Entidades.pdb
+C:\Users\Jeff\Source\Repos\DSW2_ISIL\PryDentalSuite\ReglasNegocio\obj\Debug\Libreiras.Isil.DentalSuite.ReglasNegocio.csprojResolveAssemblyReference.cache
+C:\Users\Jeff\Source\Repos\DSW2_ISIL\PryDentalSuite\ReglasNegocio\obj\Debug\ReglasNegocio.dll
+C:\Users\Jeff\Source\Repos\DSW2_ISIL\PryDentalSuite\ReglasNegocio\obj\Debug\ReglasNegocio.pdb

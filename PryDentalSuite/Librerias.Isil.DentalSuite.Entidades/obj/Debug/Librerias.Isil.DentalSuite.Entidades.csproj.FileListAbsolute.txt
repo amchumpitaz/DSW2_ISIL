@@ -1,0 +1,4 @@
+C:\Users\Jeff\Source\Repos\DSW2_ISIL\PryDentalSuite\Librerias.Isil.DentalSuite.Entidades\bin\Debug\Librerias.Isil.DentalSuite.Entidades.dll
+C:\Users\Jeff\Source\Repos\DSW2_ISIL\PryDentalSuite\Librerias.Isil.DentalSuite.Entidades\bin\Debug\Librerias.Isil.DentalSuite.Entidades.pdb
+C:\Users\Jeff\Source\Repos\DSW2_ISIL\PryDentalSuite\Librerias.Isil.DentalSuite.Entidades\obj\Debug\Librerias.Isil.DentalSuite.Entidades.dll
+C:\Users\Jeff\Source\Repos\DSW2_ISIL\PryDentalSuite\Librerias.Isil.DentalSuite.Entidades\obj\Debug\Librerias.Isil.DentalSuite.Entidades.pdb

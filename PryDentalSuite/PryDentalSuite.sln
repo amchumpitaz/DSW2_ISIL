@@ -9,7 +9,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Librerias.Isil.DentalSuite.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Librerias.Isil.DentalSuite.Entidades", "Librerias.Isil.DentalSuite.Entidades\Librerias.Isil.DentalSuite.Entidades.csproj", "{295E7785-F2F1-4D01-AF5E-93245177AD50}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReglasNegocio", "ReglasNegocio\ReglasNegocio.csproj", "{35449BB2-FF50-40FF-83E1-509C4913B79C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Libreiras.Isil.DentalSuite.ReglasNegocio", "ReglasNegocio\Libreiras.Isil.DentalSuite.ReglasNegocio.csproj", "{35449BB2-FF50-40FF-83E1-509C4913B79C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

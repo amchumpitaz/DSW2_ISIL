@@ -486,6 +486,17 @@ AS
 	WHERE	Cod_Usuario = @Cod_Usuario
 GO
 
+/***** USP ELIMINAR *****/
+
+CREATE PROCEDURE dbo.USP_Eliminar_Usuario
+	@Cod_Usuario char(4)
+AS
+	UPDATE dbo.Tb_Usuario
+	SET
+	    Estado = 0
+	WHERE dbo.Tb_Usuario.Cod_Usuario = @Cod_Usuario
+GO
+
 /***** TRIGGER *****/
 
 CREATE TRIGGER dbo.TR_Eliminar_Especialidad

@@ -113,6 +113,16 @@
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Librerias.Isil.DentalSuite.Entidades\Librerias.Isil.DentalSuite.Entidades.csproj">
+      <Project>{295e7785-f2f1-4d01-af5e-93245177ad50}</Project>
+      <Name>Librerias.Isil.DentalSuite.Entidades</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ReglasNegocio\Libreiras.Isil.DentalSuite.ReglasNegocio.csproj">
+      <Project>{35449bb2-ff50-40ff-83e1-509c4913b79c}</Project>
+      <Name>Libreiras.Isil.DentalSuite.ReglasNegocio</Name>
+    </ProjectReference>
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
