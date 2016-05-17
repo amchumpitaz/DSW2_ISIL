@@ -9,7 +9,8 @@
     position:absolute;
 }
 
- #cphDinamico_popupAgregarEspecialidad,#cphDinamico_popupInformativo, #cphDinamico_popupEliminarEspecialidad {
+ #cphDinamico_popupAgregarEspecialidad,#cphDinamico_popupInformativo, #cphDinamico_popupEliminarEspecialidad,
+ #cphDinamico_popupActualizarEspecialidad {
     text-align:center;
     font-size:1.2em;
     resize: horizontal;

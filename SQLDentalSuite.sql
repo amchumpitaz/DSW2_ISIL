@@ -506,6 +506,16 @@ AS
 	WHERE Cod_Especialidad = @Cod_Especialidad
 GO
 
+/***** USP BUSCAR *****/
+
+CREATE PROCEDURE dbo.USP_Buscar_Especialidad
+@Cod_Especialidad int
+AS
+	SELECT te.Cod_Especialidad, te.Nombre, te.Descripcion
+	FROM dbo.Tb_Especialidad te
+	WHERE te.Cod_Especialidad = @Cod_Especialidad AND te.Estado = 1
+GO
+
 /***** TRIGGER *****/
 
 CREATE TRIGGER dbo.TR_Eliminar_Especialidad

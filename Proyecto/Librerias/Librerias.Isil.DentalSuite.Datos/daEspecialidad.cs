@@ -90,6 +90,8 @@ namespace Librerias.Isil.DentalSuite.Datos
             {
                 using (var cmd = new SqlCommand("USP_Modificar_Especialidad", cnx))
                 {
+                    cnx.Open();
+                    cmd.CommandType = CommandType.StoredProcedure;
                     try
                     {
                         cmd.Parameters.Add(new SqlParameter("@Cod_Especialidad", SqlDbType.Int)).Value = especialidadBe.Cod_Especialidad;
@@ -99,6 +101,39 @@ namespace Librerias.Isil.DentalSuite.Datos
                         var n = cmd.ExecuteNonQuery();
                         Exito = (n > 0);
                         return Exito;
+                    }
+                    catch (Exception x)
+                    {
+                        throw new Exception(string.Format(x.Message), x);
+                    }
+                }
+            }
+        }
+
+        public beEspecialidad BuscarEspecialidad(int codEspecialidad)
+        {
+            using (var cnx = new SqlConnection(_miConexion.GetCnx()))
+            {
+                using (var cmd = new SqlCommand("USP_Buscar_Especialidad", cnx))
+                {
+                    cnx.Open();
+                    cmd.CommandType = CommandType.StoredProcedure;
+                    try
+                    {
+                        cmd.Parameters.Add(new SqlParameter("@Cod_Especialidad", SqlDbType.Int)).Value = codEspecialidad;
+
+                        var drd = cmd.ExecuteReader(CommandBehavior.SingleRow);
+                        beEspecialidad obeEspecialidad = null;
+                        obeEspecialidad = new beEspecialidad();
+                        if (drd.HasRows)
+                        {
+                            drd.Read();
+                            obeEspecialidad.Cod_Especialidad = int.Parse(drd.GetValue(drd.GetOrdinal("Cod_Especialidad")).ToString());
+                            obeEspecialidad.Nombre = drd.GetValue(drd.GetOrdinal("Nombre")).ToString();
+                            obeEspecialidad.Descripcion = drd.GetValue(drd.GetOrdinal("Descripcion")).ToString();
+                            drd.Close();
+                        }
+                        return obeEspecialidad;
                     }
                     catch (Exception x)
                     {

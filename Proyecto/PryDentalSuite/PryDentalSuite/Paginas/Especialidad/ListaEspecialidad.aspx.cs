@@ -45,8 +45,9 @@ namespace PryDentalSuite.Paginas.Especialidad
 
         protected void dgvEspecialidad_OnSelectedIndexChanging(object sender, GridViewSelectEventArgs e)
         {
-           int cod = Convert.ToInt32(dgvEspecialidad.DataKeys[e.NewSelectedIndex].Value);
-
+            Session["codigo"] = Convert.ToInt32(dgvEspecialidad.DataKeys[e.NewSelectedIndex].Value);
+            Response.Redirect("ActualizarEspecialidad.aspx");
+            ListarEspecialidad();
         }
 
         protected void btnAceptarInformacion_Click(object sender, EventArgs e)
@@ -67,7 +68,7 @@ namespace PryDentalSuite.Paginas.Especialidad
             _obeEspecialidad.Cod_Especialidad = int.Parse(Session["codigo"].ToString());
             MensajesPopup(_obrEspecialidad.EliminarEspecialidad(_obeEspecialidad)
                 ? "Especialidad eliminada correctamente"
-                : "Error");
+                : "Error al eliminar la especialidad...");
         }
     }
 }

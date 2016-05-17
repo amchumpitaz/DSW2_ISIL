@@ -106,6 +106,7 @@
     <Content Include="Paginas\Usuario\ListaUsuario.aspx" />
     <Content Include="scripts\ai.0.15.0-build58334.js" />
     <Content Include="scripts\ai.0.15.0-build58334.min.js" />
+    <Content Include="scripts\custom.js" />
     <Content Include="scripts\Popup.js" />
     <Content Include="Web.config" />
   </ItemGroup>

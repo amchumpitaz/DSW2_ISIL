@@ -6,26 +6,31 @@ namespace Librerias.Isil.DentalSuite.ReglasNegocio
 {
     public class brEspecialidad
     {
-        private readonly daEspecialidad _usuarioAdo = new daEspecialidad();
+        private readonly daEspecialidad _especialidadoAdo = new daEspecialidad();
 
         public DataTable ListarEspecialidad()
         {
-            return _usuarioAdo.ListarEspecialidad();
+            return _especialidadoAdo.ListarEspecialidad();
         }
 
         public bool InsertarEspecialidad(beEspecialidad especialidadBe)
         {
-            return _usuarioAdo.InsertarEspecialidad(especialidadBe);
+            return _especialidadoAdo.InsertarEspecialidad(especialidadBe);
         }
 
         public bool EliminarEspecialidad(beEspecialidad especialidadBe)
         {
-            return _usuarioAdo.EliminarEspecialidad(especialidadBe);
+            return _especialidadoAdo.EliminarEspecialidad(especialidadBe);
         }
 
         public bool ModificarEspecialidad(beEspecialidad especialidadBe)
         {
-            return _usuarioAdo.ModificarEspecialidad(especialidadBe);
+            return _especialidadoAdo.ModificarEspecialidad(especialidadBe);
+        }
+
+        public beEspecialidad BuscarEspecialidad(int codEspecialidad)
+        {
+            return _especialidadoAdo.BuscarEspecialidad(codEspecialidad);
         }
     }
 }
