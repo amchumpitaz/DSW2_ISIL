@@ -1,0 +1,64 @@
+﻿@font-face {
+    font-family: Play;
+    src: url(../Fonts/Play-Regular.ttf);
+
+}#cphDinamico_dvfondo {
+    z-index:8;
+    width:auto;
+    height:auto;
+    position:absolute;
+}
+
+ #cphDinamico_popupAgregarEspecialidad,#cphDinamico_popupInformativo, #cphDinamico_popupEliminarEspecialidad {
+    text-align:center;
+    font-size:1.2em;
+    resize: horizontal;
+    width: 370px;
+    position: absolute;
+    border-radius:40px;
+    padding:1em;
+    top: calc(50% - 120px);
+    left: calc(50% - 150px);
+    z-index: 100;
+    border: 1px solid black;
+    box-shadow: 2px 2px 10px black;
+    background-color: #000000;
+    background-color: rgba(0,0,0,0.6);
+    color: white;
+}
+/*#cphDinamico_popupInformativo {
+    text-align:center;
+    font-size:1.2em;
+    width: auto;
+    height: auto;
+    position: absolute;
+    -ms-border-radius:40px;
+    border-radius:40px;
+    padding:1em;
+    top: calc(50% - 130px);
+    left: calc(50% - 195px);
+    z-index: 100;
+    border: 1px solid black;
+    -webkit-box-shadow: 2px 2px 10px black;
+    -ms-box-shadow: 2px 2px 10px black;
+    box-shadow: 2px 2px 10px black;
+    background-color: #000000;
+    background-color: rgba(0,0,0,0.6);
+}*/
+
+#cphDinamico_lblInformacion{
+    color:white;
+    font-family:Play;
+    font-size:1.1em;
+}
+#cphDinamico_btnAceptarInformacion, #cphDinamico_btnAceptar, #cphDinamico_btnCancelar{
+    color:White;
+    background-color:green;
+    border:1px solid white;
+    -ms-border-radius:5px;
+    border-radius:5px;
+    height:30px;
+    width:100px;
+    font-size:1.1em;
+    font-family:play;
+} 

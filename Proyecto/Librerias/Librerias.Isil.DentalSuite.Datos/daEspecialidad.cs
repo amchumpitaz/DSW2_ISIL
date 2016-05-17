@@ -45,8 +45,8 @@ namespace Librerias.Isil.DentalSuite.Datos
 
                     try
                     {
-                        cmd.Parameters.Add(new SqlParameter("@Nombres", SqlDbType.VarChar)).Value = especialidadBe.Nombre;
-                        cmd.Parameters.Add(new SqlParameter("@Apellidos", SqlDbType.VarChar)).Value = especialidadBe.Descripcion;
+                        cmd.Parameters.Add(new SqlParameter("@Nombre", SqlDbType.VarChar)).Value = especialidadBe.Nombre;
+                        cmd.Parameters.Add(new SqlParameter("@Descripcion", SqlDbType.VarChar)).Value = especialidadBe.Descripcion;
 
                         var n = cmd.ExecuteNonQuery();
                         Exito = (n > 0);
