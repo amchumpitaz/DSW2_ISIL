@@ -1,0 +1,59 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Principal.Master.cs" Inherits="PryDentalSuite.PrincipalPaciente" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            width: 100%;
+            height: 414px;
+        }
+        .auto-style9 {
+            width: 221px;
+            height: 148px;
+        }
+        .auto-style10 {
+            height: 148px;
+        }
+        .auto-style11 {
+            width: 221px;
+            height: 309px;
+        }
+        .auto-style12 {
+            height: 309px;
+        }
+        .auto-style13 {
+            height: 61px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        
+        <table class="auto-style1">
+            <tr class="titulo">
+                <td class="auto-style9"><img src="../../imagenes/logo.jpg" /></td>
+                <td class="auto-style10">DentalSuite</td>
+            </tr>
+            <tr>
+                <td class="auto-style11">MENU</td>
+                <td class="auto-style12">
+                    <asp:ContentPlaceHolder ID="cphDinamico" runat="server">
+                        <!--Aquí se visualizará la parte dinámica -->
+                    </asp:ContentPlaceHolder>
+                </td>
+            </tr>
+            <tr>
+                <td id="PieDePagina" colspan="2" class="auto-style13">Todos los derechos reservados.</td>
+            </tr>
+        </table>
+    </div>
+    </form>
+</body>
+</html>

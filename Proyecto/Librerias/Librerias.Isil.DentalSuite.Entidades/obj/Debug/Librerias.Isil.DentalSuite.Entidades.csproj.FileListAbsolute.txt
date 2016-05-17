@@ -1,0 +1,5 @@
+C:\Users\Jeff\Desktop\TRABAJO FINAL\Librerias\Librerias.Isil.DentalSuite.Entidades\bin\Debug\Librerias.Isil.DentalSuite.Entidades.dll
+C:\Users\Jeff\Desktop\TRABAJO FINAL\Librerias\Librerias.Isil.DentalSuite.Entidades\bin\Debug\Librerias.Isil.DentalSuite.Entidades.pdb
+C:\Users\Jeff\Desktop\TRABAJO FINAL\Librerias\Librerias.Isil.DentalSuite.Entidades\obj\Debug\Librerias.Isil.DentalSuite.Entidades.csprojResolveAssemblyReference.cache
+C:\Users\Jeff\Desktop\TRABAJO FINAL\Librerias\Librerias.Isil.DentalSuite.Entidades\obj\Debug\Librerias.Isil.DentalSuite.Entidades.dll
+C:\Users\Jeff\Desktop\TRABAJO FINAL\Librerias\Librerias.Isil.DentalSuite.Entidades\obj\Debug\Librerias.Isil.DentalSuite.Entidades.pdb

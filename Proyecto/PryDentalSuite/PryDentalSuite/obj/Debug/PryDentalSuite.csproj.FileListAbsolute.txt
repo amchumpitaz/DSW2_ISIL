@@ -1,0 +1,78 @@
+C:\Users\Jeff\Desktop\TRABAJO FINAL\PryDentalSuite\PryDentalSuite\bin\ApplicationInsights.config
+C:\Users\Jeff\Desktop\TRABAJO FINAL\PryDentalSuite\PryDentalSuite\bin\roslyn\csc.exe
+C:\Users\Jeff\Desktop\TRABAJO FINAL\PryDentalSuite\PryDentalSuite\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Jeff\Desktop\TRABAJO FINAL\PryDentalSuite\PryDentalSuite\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Jeff\Desktop\TRABAJO FINAL\PryDentalSuite\PryDentalSuite\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Jeff\Desktop\TRABAJO FINAL\PryDentalSuite\PryDentalSuite\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Jeff\Desktop\TRABAJO FINAL\PryDentalSuite\PryDentalSuite\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Jeff\Desktop\TRABAJO FINAL\PryDentalSuite\PryDentalSuite\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Jeff\Desktop\TRABAJO FINAL\PryDentalSuite\PryDentalSuite\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Jeff\Desktop\TRABAJO FINAL\PryDentalSuite\PryDentalSuite\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Jeff\Desktop\TRABAJO FINAL\PryDentalSuite\PryDentalSuite\bin\roslyn\vbc.exe
+C:\Users\Jeff\Desktop\TRABAJO FINAL\PryDentalSuite\PryDentalSuite\bin\roslyn\VBCSCompiler.exe
+C:\Users\Jeff\Desktop\TRABAJO FINAL\PryDentalSuite\PryDentalSuite\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Jeff\Desktop\TRABAJO FINAL\PryDentalSuite\PryDentalSuite\bin\PryDentalSuite.dll.config
+C:\Users\Jeff\Desktop\TRABAJO FINAL\PryDentalSuite\PryDentalSuite\bin\PryDentalSuite.dll
+C:\Users\Jeff\Desktop\TRABAJO FINAL\PryDentalSuite\PryDentalSuite\bin\PryDentalSuite.pdb
+C:\Users\Jeff\Desktop\TRABAJO FINAL\PryDentalSuite\PryDentalSuite\bin\Librerias.Isil.DentalSuite.Entidades.dll
+C:\Users\Jeff\Desktop\TRABAJO FINAL\PryDentalSuite\PryDentalSuite\bin\Librerias.Isil.DentalSuite.ReglasNegocio.dll
+C:\Users\Jeff\Desktop\TRABAJO FINAL\PryDentalSuite\PryDentalSuite\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\Jeff\Desktop\TRABAJO FINAL\PryDentalSuite\PryDentalSuite\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\Jeff\Desktop\TRABAJO FINAL\PryDentalSuite\PryDentalSuite\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\Jeff\Desktop\TRABAJO FINAL\PryDentalSuite\PryDentalSuite\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\Jeff\Desktop\TRABAJO FINAL\PryDentalSuite\PryDentalSuite\bin\Microsoft.AI.Web.dll
+C:\Users\Jeff\Desktop\TRABAJO FINAL\PryDentalSuite\PryDentalSuite\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\Jeff\Desktop\TRABAJO FINAL\PryDentalSuite\PryDentalSuite\bin\Microsoft.ApplicationInsights.dll
+C:\Users\Jeff\Desktop\TRABAJO FINAL\PryDentalSuite\PryDentalSuite\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Jeff\Desktop\TRABAJO FINAL\PryDentalSuite\PryDentalSuite\bin\Librerias.Isil.DentalSuite.Datos.dll
+C:\Users\Jeff\Desktop\TRABAJO FINAL\PryDentalSuite\PryDentalSuite\bin\Librerias.Isil.DentalSuite.Entidades.pdb
+C:\Users\Jeff\Desktop\TRABAJO FINAL\PryDentalSuite\PryDentalSuite\bin\Librerias.Isil.DentalSuite.ReglasNegocio.pdb
+C:\Users\Jeff\Desktop\TRABAJO FINAL\PryDentalSuite\PryDentalSuite\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\Jeff\Desktop\TRABAJO FINAL\PryDentalSuite\PryDentalSuite\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\Jeff\Desktop\TRABAJO FINAL\PryDentalSuite\PryDentalSuite\bin\Microsoft.AI.Web.xml
+C:\Users\Jeff\Desktop\TRABAJO FINAL\PryDentalSuite\PryDentalSuite\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\Jeff\Desktop\TRABAJO FINAL\PryDentalSuite\PryDentalSuite\bin\Microsoft.ApplicationInsights.xml
+C:\Users\Jeff\Desktop\TRABAJO FINAL\PryDentalSuite\PryDentalSuite\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Jeff\Desktop\TRABAJO FINAL\PryDentalSuite\PryDentalSuite\bin\Librerias.Isil.DentalSuite.Datos.pdb
+C:\Users\Jeff\Desktop\TRABAJO FINAL\PryDentalSuite\PryDentalSuite\obj\Debug\PryDentalSuite.csprojResolveAssemblyReference.cache
+C:\Users\Jeff\Desktop\TRABAJO FINAL\PryDentalSuite\PryDentalSuite\obj\Debug\PryDentalSuite.dll
+C:\Users\Jeff\Desktop\TRABAJO FINAL\PryDentalSuite\PryDentalSuite\obj\Debug\PryDentalSuite.pdb
+D:\ISIL\2016-1\DESARROLLO DE SOFTWARE II\integrado\Proyecto Final DSWII\PryDentalSuite\PryDentalSuite\bin\ApplicationInsights.config
+D:\ISIL\2016-1\DESARROLLO DE SOFTWARE II\integrado\Proyecto Final DSWII\PryDentalSuite\PryDentalSuite\bin\roslyn\csc.exe
+D:\ISIL\2016-1\DESARROLLO DE SOFTWARE II\integrado\Proyecto Final DSWII\PryDentalSuite\PryDentalSuite\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\ISIL\2016-1\DESARROLLO DE SOFTWARE II\integrado\Proyecto Final DSWII\PryDentalSuite\PryDentalSuite\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\ISIL\2016-1\DESARROLLO DE SOFTWARE II\integrado\Proyecto Final DSWII\PryDentalSuite\PryDentalSuite\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\ISIL\2016-1\DESARROLLO DE SOFTWARE II\integrado\Proyecto Final DSWII\PryDentalSuite\PryDentalSuite\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\ISIL\2016-1\DESARROLLO DE SOFTWARE II\integrado\Proyecto Final DSWII\PryDentalSuite\PryDentalSuite\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\ISIL\2016-1\DESARROLLO DE SOFTWARE II\integrado\Proyecto Final DSWII\PryDentalSuite\PryDentalSuite\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\ISIL\2016-1\DESARROLLO DE SOFTWARE II\integrado\Proyecto Final DSWII\PryDentalSuite\PryDentalSuite\bin\roslyn\System.Collections.Immutable.dll
+D:\ISIL\2016-1\DESARROLLO DE SOFTWARE II\integrado\Proyecto Final DSWII\PryDentalSuite\PryDentalSuite\bin\roslyn\System.Reflection.Metadata.dll
+D:\ISIL\2016-1\DESARROLLO DE SOFTWARE II\integrado\Proyecto Final DSWII\PryDentalSuite\PryDentalSuite\bin\roslyn\vbc.exe
+D:\ISIL\2016-1\DESARROLLO DE SOFTWARE II\integrado\Proyecto Final DSWII\PryDentalSuite\PryDentalSuite\bin\roslyn\VBCSCompiler.exe
+D:\ISIL\2016-1\DESARROLLO DE SOFTWARE II\integrado\Proyecto Final DSWII\PryDentalSuite\PryDentalSuite\bin\roslyn\VBCSCompiler.exe.config
+D:\ISIL\2016-1\DESARROLLO DE SOFTWARE II\integrado\Proyecto Final DSWII\PryDentalSuite\PryDentalSuite\bin\PryDentalSuite.dll.config
+D:\ISIL\2016-1\DESARROLLO DE SOFTWARE II\integrado\Proyecto Final DSWII\PryDentalSuite\PryDentalSuite\bin\PryDentalSuite.dll
+D:\ISIL\2016-1\DESARROLLO DE SOFTWARE II\integrado\Proyecto Final DSWII\PryDentalSuite\PryDentalSuite\bin\PryDentalSuite.pdb
+D:\ISIL\2016-1\DESARROLLO DE SOFTWARE II\integrado\Proyecto Final DSWII\PryDentalSuite\PryDentalSuite\bin\Librerias.Isil.DentalSuite.Entidades.dll
+D:\ISIL\2016-1\DESARROLLO DE SOFTWARE II\integrado\Proyecto Final DSWII\PryDentalSuite\PryDentalSuite\bin\Librerias.Isil.DentalSuite.ReglasNegocio.dll
+D:\ISIL\2016-1\DESARROLLO DE SOFTWARE II\integrado\Proyecto Final DSWII\PryDentalSuite\PryDentalSuite\bin\Microsoft.AI.Agent.Intercept.dll
+D:\ISIL\2016-1\DESARROLLO DE SOFTWARE II\integrado\Proyecto Final DSWII\PryDentalSuite\PryDentalSuite\bin\Microsoft.AI.DependencyCollector.dll
+D:\ISIL\2016-1\DESARROLLO DE SOFTWARE II\integrado\Proyecto Final DSWII\PryDentalSuite\PryDentalSuite\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\ISIL\2016-1\DESARROLLO DE SOFTWARE II\integrado\Proyecto Final DSWII\PryDentalSuite\PryDentalSuite\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\ISIL\2016-1\DESARROLLO DE SOFTWARE II\integrado\Proyecto Final DSWII\PryDentalSuite\PryDentalSuite\bin\Microsoft.AI.Web.dll
+D:\ISIL\2016-1\DESARROLLO DE SOFTWARE II\integrado\Proyecto Final DSWII\PryDentalSuite\PryDentalSuite\bin\Microsoft.AI.WindowsServer.dll
+D:\ISIL\2016-1\DESARROLLO DE SOFTWARE II\integrado\Proyecto Final DSWII\PryDentalSuite\PryDentalSuite\bin\Microsoft.ApplicationInsights.dll
+D:\ISIL\2016-1\DESARROLLO DE SOFTWARE II\integrado\Proyecto Final DSWII\PryDentalSuite\PryDentalSuite\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\ISIL\2016-1\DESARROLLO DE SOFTWARE II\integrado\Proyecto Final DSWII\PryDentalSuite\PryDentalSuite\bin\Librerias.Isil.DentalSuite.Datos.dll
+D:\ISIL\2016-1\DESARROLLO DE SOFTWARE II\integrado\Proyecto Final DSWII\PryDentalSuite\PryDentalSuite\bin\Librerias.Isil.DentalSuite.Entidades.pdb
+D:\ISIL\2016-1\DESARROLLO DE SOFTWARE II\integrado\Proyecto Final DSWII\PryDentalSuite\PryDentalSuite\bin\Librerias.Isil.DentalSuite.ReglasNegocio.pdb
+D:\ISIL\2016-1\DESARROLLO DE SOFTWARE II\integrado\Proyecto Final DSWII\PryDentalSuite\PryDentalSuite\bin\Microsoft.AI.DependencyCollector.xml
+D:\ISIL\2016-1\DESARROLLO DE SOFTWARE II\integrado\Proyecto Final DSWII\PryDentalSuite\PryDentalSuite\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\ISIL\2016-1\DESARROLLO DE SOFTWARE II\integrado\Proyecto Final DSWII\PryDentalSuite\PryDentalSuite\bin\Microsoft.AI.Web.xml
+D:\ISIL\2016-1\DESARROLLO DE SOFTWARE II\integrado\Proyecto Final DSWII\PryDentalSuite\PryDentalSuite\bin\Microsoft.AI.WindowsServer.xml
+D:\ISIL\2016-1\DESARROLLO DE SOFTWARE II\integrado\Proyecto Final DSWII\PryDentalSuite\PryDentalSuite\bin\Microsoft.ApplicationInsights.xml
+D:\ISIL\2016-1\DESARROLLO DE SOFTWARE II\integrado\Proyecto Final DSWII\PryDentalSuite\PryDentalSuite\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\ISIL\2016-1\DESARROLLO DE SOFTWARE II\integrado\Proyecto Final DSWII\PryDentalSuite\PryDentalSuite\bin\Librerias.Isil.DentalSuite.Datos.pdb
+D:\ISIL\2016-1\DESARROLLO DE SOFTWARE II\integrado\Proyecto Final DSWII\PryDentalSuite\PryDentalSuite\obj\Debug\PryDentalSuite.csprojResolveAssemblyReference.cache
+D:\ISIL\2016-1\DESARROLLO DE SOFTWARE II\integrado\Proyecto Final DSWII\PryDentalSuite\PryDentalSuite\obj\Debug\PryDentalSuite.dll
+D:\ISIL\2016-1\DESARROLLO DE SOFTWARE II\integrado\Proyecto Final DSWII\PryDentalSuite\PryDentalSuite\obj\Debug\PryDentalSuite.pdb
