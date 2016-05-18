@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Text;
 using System.Web.UI;
 using Librerias.Isil.DentalSuite.Entidades;
 using Librerias.Isil.DentalSuite.ReglasNegocio;
@@ -12,7 +13,7 @@ namespace PryDentalSuite
         protected void Page_Load(object sender, EventArgs e)
         {
             string tablaPaciente = "";
-            System.Text.StringBuilder js = new System.Text.StringBuilder();
+            StringBuilder js = new StringBuilder();
             brPaciente obrPaciente = new brPaciente();
             lbePaciente = obrPaciente.Listar();
             tablaPaciente = crearTabla();
@@ -28,7 +29,7 @@ namespace PryDentalSuite
 
         public string crearTabla()
         {
-            System.Text.StringBuilder js = new System.Text.StringBuilder();
+            StringBuilder js = new StringBuilder();
             js.Append("<tbody>");
             js.Append("<thead>");
             js.Append("<tr>");

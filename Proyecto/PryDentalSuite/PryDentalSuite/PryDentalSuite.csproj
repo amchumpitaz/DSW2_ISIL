@@ -102,7 +102,6 @@
     <Content Include="Paginas\Paciente\ListaPacientes.aspx" />
     <Content Include="Paginas\Usuario\ActualizarUsuario.aspx" />
     <Content Include="Paginas\Usuario\AgregarUsuario.aspx" />
-    <Content Include="Paginas\Usuario\EliminarUsuario.aspx" />
     <Content Include="Paginas\Usuario\ListaUsuario.aspx" />
     <Content Include="scripts\ai.0.15.0-build58334.js" />
     <Content Include="scripts\ai.0.15.0-build58334.min.js" />
@@ -208,13 +207,6 @@
     </Compile>
     <Compile Include="Paginas\Usuario\AgregarUsuario.aspx.designer.cs">
       <DependentUpon>AgregarUsuario.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Paginas\Usuario\EliminarUsuario.aspx.cs">
-      <DependentUpon>EliminarUsuario.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Paginas\Usuario\EliminarUsuario.aspx.designer.cs">
-      <DependentUpon>EliminarUsuario.aspx</DependentUpon>
     </Compile>
     <Compile Include="Paginas\Usuario\ListaUsuario.aspx.cs">
       <DependentUpon>ListaUsuario.aspx</DependentUpon>

@@ -1,13 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
 using System.Web.UI;
-using System.Web.UI.WebControls;
 
 namespace PryDentalSuite.Paginas.Paciente
 {
-    public partial class ActualizarPaciente : System.Web.UI.Page
+    public partial class ActualizarPaciente : Page
     {
         string codigo = "";
         protected void Page_Load(object sender, EventArgs e)

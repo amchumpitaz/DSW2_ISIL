@@ -22,7 +22,7 @@
             </asp:UpdatePanel>
     <asp:UpdatePanel runat="server" ID="up">
         <ContentTemplate>
-    <h2>Ingresa los datos de la nueva Especialidad<br /></h2>
+    <h2>Lista de Especialidades<br /></h2>
     <asp:GridView ID="dgvEspecialidad" runat="server" AutoGenerateColumns="False" CellPadding="4"
         DataKeyNames="Cod_Especialidad"
         OnSelectedIndexChanging="dgvEspecialidad_OnSelectedIndexChanging"

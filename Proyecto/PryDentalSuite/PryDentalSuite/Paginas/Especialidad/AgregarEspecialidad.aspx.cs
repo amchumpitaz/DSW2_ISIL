@@ -1,15 +1,11 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
 using System.Web.UI;
-using System.Web.UI.WebControls;
 using Librerias.Isil.DentalSuite.Entidades;
 using Librerias.Isil.DentalSuite.ReglasNegocio;
 
 namespace PryDentalSuite.Paginas.Especialidad
 {
-    public partial class AgregarEspecialidad : System.Web.UI.Page
+    public partial class AgregarEspecialidad : Page
     {
         readonly beEspecialidad _obeEspecialidad = new beEspecialidad();
         readonly brEspecialidad _obrEspecialidad = new brEspecialidad();

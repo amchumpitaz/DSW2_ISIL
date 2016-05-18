@@ -10,7 +10,8 @@
 }
 
  #cphDinamico_popupAgregarEspecialidad,#cphDinamico_popupInformativo, #cphDinamico_popupEliminarEspecialidad,
- #cphDinamico_popupActualizarEspecialidad {
+ #cphDinamico_popupActualizarEspecialidad, #cphDinamico_popupEliminarUsuario, #cphDinamico_popupActualizarUsuario,
+ #cphDinamico_popupAgregarUsuario {
     text-align:center;
     font-size:1.2em;
     resize: horizontal;

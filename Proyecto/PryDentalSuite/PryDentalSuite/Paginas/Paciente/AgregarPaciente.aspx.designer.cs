@@ -7,6 +7,8 @@
 // </generado automáticamente>
 //------------------------------------------------------------------------------
 
+using System.Web.UI.WebControls;
+
 namespace PryDentalSuite.Paginas.Paciente {
     
     
@@ -19,7 +21,7 @@ namespace PryDentalSuite.Paginas.Paciente {
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtCodigo;
+        protected TextBox txtCodigo;
         
         /// <summary>
         /// Control txtNombres.
@@ -28,7 +30,7 @@ namespace PryDentalSuite.Paginas.Paciente {
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtNombres;
+        protected TextBox txtNombres;
         
         /// <summary>
         /// Control txtApePaterno.
@@ -37,7 +39,7 @@ namespace PryDentalSuite.Paginas.Paciente {
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtApePaterno;
+        protected TextBox txtApePaterno;
         
         /// <summary>
         /// Control txtApeMaterno.
@@ -46,7 +48,7 @@ namespace PryDentalSuite.Paginas.Paciente {
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtApeMaterno;
+        protected TextBox txtApeMaterno;
         
         /// <summary>
         /// Control cboSexo.
@@ -55,7 +57,7 @@ namespace PryDentalSuite.Paginas.Paciente {
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList cboSexo;
+        protected DropDownList cboSexo;
         
         /// <summary>
         /// Control cboTipoDocumento.
@@ -64,7 +66,7 @@ namespace PryDentalSuite.Paginas.Paciente {
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList cboTipoDocumento;
+        protected DropDownList cboTipoDocumento;
         
         /// <summary>
         /// Control txtNumDocumento.
@@ -73,7 +75,7 @@ namespace PryDentalSuite.Paginas.Paciente {
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtNumDocumento;
+        protected TextBox txtNumDocumento;
         
         /// <summary>
         /// Control txtCorreo.
@@ -82,7 +84,7 @@ namespace PryDentalSuite.Paginas.Paciente {
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtCorreo;
+        protected TextBox txtCorreo;
         
         /// <summary>
         /// Control txtDireccion.
@@ -91,7 +93,7 @@ namespace PryDentalSuite.Paginas.Paciente {
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtDireccion;
+        protected TextBox txtDireccion;
         
         /// <summary>
         /// Control cboDepartamento.
@@ -100,7 +102,7 @@ namespace PryDentalSuite.Paginas.Paciente {
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList cboDepartamento;
+        protected DropDownList cboDepartamento;
         
         /// <summary>
         /// Control cboProvincia.
@@ -109,7 +111,7 @@ namespace PryDentalSuite.Paginas.Paciente {
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList cboProvincia;
+        protected DropDownList cboProvincia;
         
         /// <summary>
         /// Control cboDistrito.
@@ -118,7 +120,7 @@ namespace PryDentalSuite.Paginas.Paciente {
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList cboDistrito;
+        protected DropDownList cboDistrito;
         
         /// <summary>
         /// Control btnAgregar.
@@ -127,6 +129,6 @@ namespace PryDentalSuite.Paginas.Paciente {
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnAgregar;
+        protected Button btnAgregar;
     }
 }

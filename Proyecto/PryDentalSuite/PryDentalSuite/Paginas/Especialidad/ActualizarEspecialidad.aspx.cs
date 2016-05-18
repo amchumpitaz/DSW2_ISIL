@@ -1,11 +1,11 @@
 ﻿using System;
-using System.Web;
+using System.Web.UI;
 using Librerias.Isil.DentalSuite.Entidades;
 using Librerias.Isil.DentalSuite.ReglasNegocio;
 
 namespace PryDentalSuite.Paginas.Especialidad
 {
-    public partial class ActualizarEspecialidad : System.Web.UI.Page
+    public partial class ActualizarEspecialidad : Page
     {
         readonly brEspecialidad _obrEspecialidad = new brEspecialidad();
         protected void Page_Load(object sender, EventArgs e)

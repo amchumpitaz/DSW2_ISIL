@@ -329,8 +329,7 @@ GO
 
 CREATE PROCEDURE dbo.USP_Insertar_Usuario
 	@Nombres varchar(30),
-	@Apellidos varchar(30),
-	@Contrasena varchar(20)
+	@Apellidos varchar(30)
 AS
 	DECLARE @vcod CHAR(4)
 	DECLARE @vcont INT
@@ -346,7 +345,7 @@ AS
 	END
 
 	INSERT INTO dbo.Tb_Usuario(Cod_Usuario, Nombres, Apellidos, Contrasena)
-	VALUES	(@vcod,@Nombres,@Apellidos,HASHBYTES('sha1',@Contrasena))
+	VALUES	(@vcod,@Nombres,@Apellidos,HASHBYTES('sha1','12345'))
 GO
 
 /***** USP MODIFICAR *****/
@@ -514,6 +513,23 @@ AS
 	SELECT te.Cod_Especialidad, te.Nombre, te.Descripcion
 	FROM dbo.Tb_Especialidad te
 	WHERE te.Cod_Especialidad = @Cod_Especialidad AND te.Estado = 1
+GO
+
+CREATE PROCEDURE dbo.USP_Buscar_Usuario
+@Cod_Usuario char(4)
+AS
+	SELECT tu.Cod_Usuario, tu.Nombres, tu.Apellidos
+	FROM dbo.Tb_Usuario tu
+	WHERE tu.Cod_Usuario = @Cod_Usuario AND tu.Estado = 1
+GO
+
+CREATE PROCEDURE dbo.USP_Obtener_Usuario
+@Nombre varchar(30),
+@Apellido varchar(30)
+AS
+	SELECT tu.Cod_Usuario,tu.Nombres, tu.Apellidos
+	FROM dbo.Tb_Usuario tu
+	WHERE	tu.Nombres = @Nombre AND tu.Apellidos = @Apellido AND tu.Estado	=1
 GO
 
 /***** TRIGGER *****/
@@ -2740,24 +2756,20 @@ GO
 
 EXEC dbo.USP_Insertar_Usuario
 	@Nombres = 'Carlos',
-	@Apellidos = 'Barremechea',
-	@Contrasena = 'carlos123'
+	@Apellidos = 'Barremechea'
 GO
 
 EXEC dbo.USP_Insertar_Usuario
 	@Nombres = 'Carlos',
-	@Apellidos = 'Castañeda',
-	@Contrasena = 'casta8574'
+	@Apellidos = 'Castañeda'
 GO
 
 EXEC dbo.USP_Insertar_Usuario
 	@Nombres = 'Aldo',
-	@Apellidos = 'Chumpitaz',
-	@Contrasena = 'chumpiald12458'
+	@Apellidos = 'Chumpitaz'
 GO
 
 EXEC dbo.USP_Insertar_Usuario
 	@Nombres = 'Veronica',
-	@Apellidos = 'Lernaque',
-	@Contrasena = 'lernver0175'
+	@Apellidos = 'Lernaque'
 GO

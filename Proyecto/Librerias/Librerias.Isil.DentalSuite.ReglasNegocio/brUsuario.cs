@@ -27,5 +27,15 @@ namespace Librerias.Isil.DentalSuite.ReglasNegocio
         {
             return _usuarioAdo.ModificarUsuario(usuarioBe);
         }
+
+        public beUsuario Buscarusuario(string codUsuario)
+        {
+            return _usuarioAdo.Buscarusuario(codUsuario);
+        }
+
+        public beUsuario ObtenerUsuario(beUsuario usuarioBe)
+        {
+            return _usuarioAdo.ObtenerUsuario(usuarioBe);
+        }
     }
 }

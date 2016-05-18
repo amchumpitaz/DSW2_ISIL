@@ -1,13 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
 using System.Web.UI;
-using System.Web.UI.WebControls;
 
 namespace PryDentalSuite.Paginas.Paciente
 {
-    public partial class EliminarPaciente : System.Web.UI.Page
+    public partial class EliminarPaciente : Page
     {
         string codigo = "";
         protected void Page_Load(object sender, EventArgs e)

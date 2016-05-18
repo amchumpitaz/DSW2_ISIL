@@ -7,6 +7,10 @@
 // </generado automáticamente>
 //------------------------------------------------------------------------------
 
+using System.Web.UI;
+using System.Web.UI.HtmlControls;
+using System.Web.UI.WebControls;
+
 namespace PryDentalSuite.Paginas.Especialidad {
     
     
@@ -19,7 +23,7 @@ namespace PryDentalSuite.Paginas.Especialidad {
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.ScriptManager ScriptManager;
+        protected ScriptManager ScriptManager;
         
         /// <summary>
         /// Control upInformativo.
@@ -28,7 +32,7 @@ namespace PryDentalSuite.Paginas.Especialidad {
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.UpdatePanel upInformativo;
+        protected UpdatePanel upInformativo;
         
         /// <summary>
         /// Control dvfondo.
@@ -37,7 +41,7 @@ namespace PryDentalSuite.Paginas.Especialidad {
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl dvfondo;
+        protected HtmlGenericControl dvfondo;
         
         /// <summary>
         /// Control popupInformativo.
@@ -46,7 +50,7 @@ namespace PryDentalSuite.Paginas.Especialidad {
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl popupInformativo;
+        protected HtmlGenericControl popupInformativo;
         
         /// <summary>
         /// Control lblInformacion.
@@ -55,7 +59,7 @@ namespace PryDentalSuite.Paginas.Especialidad {
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblInformacion;
+        protected Label lblInformacion;
         
         /// <summary>
         /// Control btnAceptarInformacion.
@@ -64,7 +68,7 @@ namespace PryDentalSuite.Paginas.Especialidad {
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnAceptarInformacion;
+        protected Button btnAceptarInformacion;
         
         /// <summary>
         /// Control popupEliminarEspecialidad.
@@ -73,7 +77,7 @@ namespace PryDentalSuite.Paginas.Especialidad {
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl popupEliminarEspecialidad;
+        protected HtmlGenericControl popupEliminarEspecialidad;
         
         /// <summary>
         /// Control btnAceptar.
@@ -82,7 +86,7 @@ namespace PryDentalSuite.Paginas.Especialidad {
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnAceptar;
+        protected Button btnAceptar;
         
         /// <summary>
         /// Control btnCancelar.
@@ -91,7 +95,7 @@ namespace PryDentalSuite.Paginas.Especialidad {
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnCancelar;
+        protected Button btnCancelar;
         
         /// <summary>
         /// Control up.
@@ -100,7 +104,7 @@ namespace PryDentalSuite.Paginas.Especialidad {
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.UpdatePanel up;
+        protected UpdatePanel up;
         
         /// <summary>
         /// Control dgvEspecialidad.
@@ -109,6 +113,6 @@ namespace PryDentalSuite.Paginas.Especialidad {
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView dgvEspecialidad;
+        protected GridView dgvEspecialidad;
     }
 }

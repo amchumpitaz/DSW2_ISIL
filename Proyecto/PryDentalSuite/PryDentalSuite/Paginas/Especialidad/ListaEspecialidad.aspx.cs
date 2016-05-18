@@ -1,7 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using Librerias.Isil.DentalSuite.Entidades;
@@ -9,7 +6,7 @@ using Librerias.Isil.DentalSuite.ReglasNegocio;
 
 namespace PryDentalSuite.Paginas.Especialidad
 {
-    public partial class ListaEspecialidad : System.Web.UI.Page
+    public partial class ListaEspecialidad : Page
     {
         readonly  beEspecialidad _obeEspecialidad = new beEspecialidad();
         readonly brEspecialidad _obrEspecialidad = new brEspecialidad();
@@ -38,14 +35,14 @@ namespace PryDentalSuite.Paginas.Especialidad
 
         protected void dgvEspecialidad_OnRowDeleting(object sender, GridViewDeleteEventArgs e)
         {
-            Session["codigo"] = Convert.ToInt32(dgvEspecialidad.DataKeys[e.RowIndex].Value);
+            Session["codigo"] = Convert.ToInt32(dgvEspecialidad.DataKeys[e.RowIndex]?.Value);
             dvfondo.Visible = true;
             popupEliminarEspecialidad.Visible = true;
         }
 
         protected void dgvEspecialidad_OnSelectedIndexChanging(object sender, GridViewSelectEventArgs e)
         {
-            Session["codigo"] = Convert.ToInt32(dgvEspecialidad.DataKeys[e.NewSelectedIndex].Value);
+            Session["codigo"] = Convert.ToInt32(dgvEspecialidad.DataKeys[e.NewSelectedIndex]?.Value);
             Response.Redirect("ActualizarEspecialidad.aspx");
             ListarEspecialidad();
         }
