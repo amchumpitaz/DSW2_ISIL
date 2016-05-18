@@ -39,9 +39,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="beDepartamento.cs" />
+    <Compile Include="beDistrito.cs" />
     <Compile Include="beEspecialidad.cs" />
     <Compile Include="beOdontologo.cs" />
     <Compile Include="bePaciente.cs" />
+    <Compile Include="beProvincia.cs" />
+    <Compile Include="beSexo.cs" />
+    <Compile Include="beTipoDocumento.cs" />
     <Compile Include="beUsuario.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

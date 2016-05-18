@@ -9,7 +9,7 @@ namespace PryDentalSuite
 {
     public partial class Paciente : Page
     {
-        List<bePaciente> lbePaciente = null;
+        List<bePaciente> lbePaciente;
         protected void Page_Load(object sender, EventArgs e)
         {
             string tablaPaciente = "";

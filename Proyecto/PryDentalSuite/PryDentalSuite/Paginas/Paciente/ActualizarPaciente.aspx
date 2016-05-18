@@ -37,8 +37,8 @@
         <tr>
             <td class="auto-style15">Sexo:</td>
             <td class="auto-style16">
-                <asp:DropDownList ID="cboSexo" runat="server" Height="27px" Width="81px">
-                </asp:DropDownList>
+                <asp:RadioButton ID="rbMasculino" runat="server" GroupName="Sexo" Text="Masculino" />
+                <asp:RadioButton ID="rbFemenino" runat="server" GroupName="Sexo" Text="Femenino" />
             </td>
             <td>&nbsp;</td>
         </tr>
@@ -53,28 +53,28 @@
         <tr>
             <td class="auto-style15">Número Documento:</td>
             <td class="auto-style16">
-                <asp:TextBox ID="txtNumDocumento" runat="server" Width="148px"></asp:TextBox>
+                <asp:TextBox ID="txtNumDocumento" runat="server" Width="109px"></asp:TextBox>
             </td>
             <td>&nbsp;</td>
         </tr>
         <tr>
             <td class="auto-style15">Correo:</td>
             <td class="auto-style16">
-                <asp:TextBox ID="txtCorreo" runat="server" Width="149px"></asp:TextBox>
+                <asp:TextBox ID="txtCorreo" runat="server" Width="235px"></asp:TextBox>
             </td>
             <td>&nbsp;</td>
         </tr>
         <tr>
             <td class="auto-style15">Dirección:</td>
             <td class="auto-style16">
-                <asp:TextBox ID="txtDireccion" runat="server" Width="150px"></asp:TextBox>
+                <asp:TextBox ID="txtDireccion" runat="server" Width="233px"></asp:TextBox>
             </td>
             <td>&nbsp;</td>
         </tr>
         <tr>
             <td class="auto-style15">Departamento:</td>
             <td class="auto-style16">
-                <asp:DropDownList ID="cboDepartamento" runat="server" Height="22px" Width="135px">
+                <asp:DropDownList ID="cboDepartamento" runat="server" Height="22px" Width="135px" OnSelectedIndexChanged="cargaComboProvincia">
                 </asp:DropDownList>
             </td>
             <td>&nbsp;</td>
@@ -82,7 +82,7 @@
         <tr>
             <td class="auto-style15">Provincia:</td>
             <td class="auto-style16">
-                <asp:DropDownList ID="cboProvincia" runat="server" Height="19px" Width="136px">
+                <asp:DropDownList ID="cboProvincia" runat="server" Height="19px" Width="136px" OnSelectedIndexChanged="cargarComboDistrito">
                 </asp:DropDownList>
             </td>
             <td>&nbsp;</td>
@@ -102,7 +102,7 @@
         </tr>
         <tr>
             <td class="auto-style15">
-                <asp:Button ID="btnActualizar" runat="server" Text="Actualizar" Width="142px" />
+                <asp:Button ID="btnActualizar" runat="server" Text="Actualizar" Width="142px" OnClick="btnActualizar_Click" />
             </td>
             <td class="auto-style16">&nbsp;</td>
             <td>&nbsp;</td>

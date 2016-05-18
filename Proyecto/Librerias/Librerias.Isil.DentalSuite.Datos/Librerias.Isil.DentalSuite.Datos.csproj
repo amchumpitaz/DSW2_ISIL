@@ -42,6 +42,8 @@
   <ItemGroup>
     <Compile Include="daConexion.cs" />
     <Compile Include="daEspecialidad.cs" />
+    <Compile Include="daGenerales.cs" />
+    <Compile Include="daOdontologo.cs" />
     <Compile Include="daPaciente.cs" />
     <Compile Include="daUsuario.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

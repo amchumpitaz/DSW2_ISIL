@@ -37,8 +37,8 @@
         <tr>
             <td class="auto-style15">Sexo:</td>
             <td class="auto-style16">
-                <asp:DropDownList ID="cboSexo" runat="server" Height="27px" Width="81px" Enabled="False">
-                </asp:DropDownList>
+                <asp:RadioButton ID="rbMasculino" runat="server" GroupName="Sexo" Text="Masculino" />
+                <asp:RadioButton ID="rbFemenino" runat="server" GroupName="Sexo" Text="Femenino" />
             </td>
             <td>&nbsp;</td>
         </tr>
@@ -53,21 +53,21 @@
         <tr>
             <td class="auto-style15">Número Documento:</td>
             <td class="auto-style16">
-                <asp:TextBox ID="txtNumDocumento" runat="server" ReadOnly="True" Width="148px"></asp:TextBox>
+                <asp:TextBox ID="txtNumDocumento" runat="server" ReadOnly="True" Width="108px"></asp:TextBox>
             </td>
             <td>&nbsp;</td>
         </tr>
         <tr>
             <td class="auto-style15">Correo:</td>
             <td class="auto-style16">
-                <asp:TextBox ID="txtCorreo" runat="server" ReadOnly="True" Width="149px"></asp:TextBox>
+                <asp:TextBox ID="txtCorreo" runat="server" ReadOnly="True" Width="238px"></asp:TextBox>
             </td>
             <td>&nbsp;</td>
         </tr>
         <tr>
             <td class="auto-style15">Dirección:</td>
             <td class="auto-style16">
-                <asp:TextBox ID="txtDireccion" runat="server" ReadOnly="True" Width="150px"></asp:TextBox>
+                <asp:TextBox ID="txtDireccion" runat="server" ReadOnly="True" Width="235px"></asp:TextBox>
             </td>
             <td>&nbsp;</td>
         </tr>
@@ -102,7 +102,7 @@
         </tr>
         <tr>
             <td class="auto-style15">
-                <asp:Button ID="btnEliminar" runat="server" Text="Eliminar" Width="142px" />
+                <asp:Button ID="btnEliminar" runat="server" Text="Eliminar" Width="142px" OnClick="btnEliminar_Click" />
             </td>
             <td class="auto-style16">&nbsp;</td>
             <td>&nbsp;</td>

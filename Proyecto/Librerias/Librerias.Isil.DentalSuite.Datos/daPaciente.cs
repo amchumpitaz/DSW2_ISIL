@@ -124,7 +124,6 @@ namespace Librerias.Isil.DentalSuite.Datos
                 cmd.Parameters.AddWithValue("@Cod_Departamento", obePaciente.CodigoDepartamento);
                 cmd.Parameters.AddWithValue("@Cod_Provincia", obePaciente.CodigoProvincia);
                 cmd.Parameters.AddWithValue("@Cod_Distrito", obePaciente.CodigoDistrito);
-                cmd.Parameters.AddWithValue("@Contrasena", obePaciente.Contraseña);
                 int n = cmd.ExecuteNonQuery();
                 exito = (n > 0);
                 return exito;

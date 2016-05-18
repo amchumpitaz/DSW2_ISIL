@@ -51,13 +51,22 @@ namespace PryDentalSuite.Paginas.Paciente {
         protected TextBox txtApeMaterno;
         
         /// <summary>
-        /// Control cboSexo.
+        /// Control rbMasculino.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected DropDownList cboSexo;
+        protected RadioButton rbMasculino;
+        
+        /// <summary>
+        /// Control rbFemenino.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected RadioButton rbFemenino;
         
         /// <summary>
         /// Control cboTipoDocumento.

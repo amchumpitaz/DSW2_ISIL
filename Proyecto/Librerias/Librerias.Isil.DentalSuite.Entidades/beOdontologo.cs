@@ -1,21 +1,21 @@
 ﻿namespace Librerias.Isil.DentalSuite.Entidades
 {
-    class beOdontologo
+    public class beOdontologo
     {
-        private string Codigo { get; set; }
-        private string Nombres { get; set; }
-        private string ApellidoPaterno { get; set; }
-        private string ApellidoMaterno { get; set; }
-        private char Sexo { get; set; }
-        private string TipoDocumento { get; set; }
-        private string NumeroDocumento { get; set; }
-        private string Correo { get; set; }
-        private string Direccion { get; set; }
-        private string CodigoDepartamento { get; set; }
-        private string CodigoProvincia { get; set; }
-        private string CodigoDistrito { get; set; }
-        private string Contraseña { get; set; }
-        private string COP { get; set; }
-        private byte estado { get; set; }
+        public string Codigo { get; set; }
+        public string Nombres { get; set; }
+        public string ApellidoPaterno { get; set; }
+        public string ApellidoMaterno { get; set; }
+        public string Sexo { get; set; }
+        public string TipoDocumento { get; set; }
+        public string NumeroDocumento { get; set; }
+        public string Correo { get; set; }
+        public string Direccion { get; set; }
+        public string CodigoDepartamento { get; set; }
+        public string CodigoProvincia { get; set; }
+        public string CodigoDistrito { get; set; }
+        public string Contraseña { get; set; }
+        public string COP { get; set; }
+        public byte estado { get; set; }
     }
 }

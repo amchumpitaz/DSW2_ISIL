@@ -37,8 +37,8 @@
         <tr>
             <td class="auto-style15">Sexo:</td>
             <td class="auto-style16">
-                <asp:DropDownList ID="cboSexo" runat="server" Height="27px" Width="81px">
-                </asp:DropDownList>
+                <asp:RadioButton ID="rbMasculino" runat="server" GroupName="Sexo" Text="Masculino" />
+                <asp:RadioButton ID="rbFemenino" runat="server" GroupName="Sexo" Text="Femenino" />
             </td>
             <td>&nbsp;</td>
         </tr>
@@ -53,21 +53,21 @@
         <tr>
             <td class="auto-style15">Número Documento:</td>
             <td class="auto-style16">
-                <asp:TextBox ID="txtNumDocumento" runat="server" Width="148px"></asp:TextBox>
+                <asp:TextBox ID="txtNumDocumento" runat="server" Width="108px"></asp:TextBox>
             </td>
             <td>&nbsp;</td>
         </tr>
         <tr>
             <td class="auto-style15">Correo:</td>
             <td class="auto-style16">
-                <asp:TextBox ID="txtCorreo" runat="server" Width="149px"></asp:TextBox>
+                <asp:TextBox ID="txtCorreo" runat="server" Width="238px"></asp:TextBox>
             </td>
             <td>&nbsp;</td>
         </tr>
         <tr>
             <td class="auto-style15">Dirección:</td>
             <td class="auto-style16">
-                <asp:TextBox ID="txtDireccion" runat="server" Width="150px"></asp:TextBox>
+                <asp:TextBox ID="txtDireccion" runat="server" Width="234px"></asp:TextBox>
             </td>
             <td>&nbsp;</td>
         </tr>

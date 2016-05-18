@@ -2,6 +2,7 @@
     Inherits="PryDentalSuite.Paginas.Especialidad.ListaEspecialidad" MasterPageFile="../MasterPages/Principal.Master" %>
 
 <asp:Content runat="server" ContentPlaceHolderID="cphDinamico">
+    <script src="../../scripts/custom.js" type="text/javascript"></script>
     <asp:ScriptManager ID="ScriptManager" runat="server"></asp:ScriptManager>
         <asp:UpdatePanel ID="upInformativo" runat="server">
                     <ContentTemplate>

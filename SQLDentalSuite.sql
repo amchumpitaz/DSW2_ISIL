@@ -159,7 +159,7 @@ CREATE PROCEDURE dbo.USP_Listar_Odontologo
 AS
 	SET NOCOUNT ON;
 
-	SELECT	[to].Cod_Odontologo, [to].Nombres+', '+[to].Ape_Paterno+' '+[to].Ape_Materno Odontologo, [to].Sexo, ttd.Descripcion_Corta,
+	SELECT	[to].Cod_Odontologo, [to].Nombres,[to].Ape_Paterno,[to].Ape_Materno, [to].Sexo, ttd.Descripcion_Corta,
 			[to].Num_Documento, [to].Correo, [to].Direccion, [to].Cod_Departamento, [to].Cod_Provincia, 
 			[to].Cod_Distrito, [to].COP
 	FROM	dbo.Tb_Odontologo [to] INNER JOIN
@@ -171,8 +171,8 @@ CREATE PROCEDURE dbo.USP_Listar_Paciente
 AS
 	SET NOCOUNT ON;
 
-	SELECT	tp.Cod_Paciente, tp.Nombres+', '+tp.Ape_Paterno+' '+tp.Ape_Materno Paciente, tp.Sexo, 
-			ttd.Descripcion_Corta, tp.Num_Documento, tp.Correo, tp.Direccion, tp.Cod_Departamento, 
+	SELECT	tp.Cod_Paciente, tp.Nombres,tp.Ape_Paterno,tp.Ape_Materno , tp.Sexo,tp.Cod_Tipo_Documento,
+			tp.Num_Documento, tp.Correo, tp.Direccion, tp.Cod_Departamento, 
 			tp.Cod_Provincia, tp.Cod_Distrito
 	FROM	dbo.Tb_Paciente tp INNER JOIN
 			dbo.Tb_Tipo_Documento ttd ON ttd.Cod_Tipo_Documento = tp.Cod_Tipo_Documento
@@ -209,6 +209,32 @@ AS
 	SELECT	ttd.Cod_Tipo_Documento,ttd.Descripcion_Larga,ttd.Descripcion_Corta
 	FROM	dbo.Tb_Tipo_Documento ttd
 	WHERE ttd.Estado = 1
+GO
+
+create procedure USP_listar_provincias
+@Cod_Departamento CHAR(2)
+AS
+select	Cod_Provincia,Descripcion from Tb_Ubigeo
+where	Cod_Departamento=@Cod_Departamento
+		and Cod_Provincia<>'00'
+		and Cod_Distrito='00'
+GO
+
+create procedure USP_listar_distritos
+@Cod_Departamento CHAR(2),@Cod_Provincia CHAR(2)
+AS
+select	Cod_Distrito,Descripcion from Tb_Ubigeo
+where	Cod_Departamento=@Cod_Departamento
+		and Cod_Provincia=@Cod_Provincia
+		and Cod_Distrito<>'00'
+go
+
+CREATE PROCEDURE USP_listar_departamentos
+AS
+	SELECT tu.Cod_Departamento, tu.Descripcion
+	FROM	dbo.Tb_Ubigeo tu
+	WHERE tu.Cod_Provincia ='00'
+			AND tu.Cod_Distrito ='00'
 GO
 
 /***** USP INSERTAR *****/
@@ -401,8 +427,7 @@ CREATE PROCEDURE dbo.USP_Modificar_Odontologo
 	@Direccion VARCHAR(80), 
 	@Cod_Departamento CHAR(6), 
 	@Cod_Provincia CHAR(6), 
-	@Cod_Distrito CHAR(6), 
-	@Contrasena VARCHAR(20),
+	@Cod_Distrito CHAR(6),
 	@COP VARCHAR(20)
 AS
 	UPDATE	dbo.Tb_Odontologo
@@ -417,8 +442,7 @@ AS
 		Direccion = @Direccion, 
 		Cod_Departamento = @Cod_Departamento, 
 		Cod_Provincia = @Cod_Provincia, 
-		Cod_Distrito = @Cod_Distrito, 
-		Contrasena = HASHBYTES('sha1',@Contrasena), 
+		Cod_Distrito = @Cod_Distrito,
 		COP = @COP
 	WHERE	Cod_Odontologo = @Cod_Odontologo
 GO
@@ -435,8 +459,7 @@ CREATE PROCEDURE dbo.USP_Modificar_Paciente
 	@Direccion VARCHAR(80), 
 	@Cod_Departamento CHAR(6), 
 	@Cod_Provincia CHAR(6), 
-	@Cod_Distrito CHAR(6), 
-	@Contrasena VARCHAR(20)
+	@Cod_Distrito CHAR(6)
 AS
 	UPDATE	dbo.Tb_Paciente
 	SET
@@ -450,8 +473,7 @@ AS
 		Direccion = @Direccion, 
 		Cod_Departamento = @Cod_Departamento, 
 		Cod_Provincia = @Cod_Provincia, 
-		Cod_Distrito = @Cod_Distrito, 
-		Contrasena = HASHBYTES('sha1',@Contrasena)
+		Cod_Distrito = @Cod_Distrito
 	WHERE	Cod_Paciente = @Cod_Paciente
 GO
 
@@ -505,6 +527,22 @@ AS
 	WHERE Cod_Especialidad = @Cod_Especialidad
 GO
 
+CREATE procedure [dbo].[USP_Eliminar_Paciente]
+@Cod_Paciente CHAR(10)
+AS
+	DELETE	FROM	Tb_Paciente
+	WHERE Cod_Paciente=@Cod_Paciente
+GO
+
+
+CREATE procedure USP_Eliminar_Odontologo
+@Cod_Odontologo CHAR(10)
+AS
+	UPDATE	dbo.Tb_Odontologo
+	SET Estado = 0
+	WHERE Cod_Odontologo=@Cod_Odontologo
+GO
+
 /***** USP BUSCAR *****/
 
 CREATE PROCEDURE dbo.USP_Buscar_Especialidad
@@ -531,6 +569,38 @@ AS
 	FROM dbo.Tb_Usuario tu
 	WHERE	tu.Nombres = @Nombre AND tu.Apellidos = @Apellido AND tu.Estado	=1
 GO
+
+create procedure USP_Buscar_Paciente 
+@Cod_Paciente CHAR(10)
+AS
+	SELECT	tp.Cod_Paciente, tp.Nombres,tp.Ape_Paterno,tp.Ape_Materno Paciente, tp.Sexo, 
+			ttd.Descripcion_Corta, tp.Num_Documento, tp.Correo, tp.Direccion, tp.Cod_Departamento, 
+			tp.Cod_Provincia, tp.Cod_Distrito, tp.Contrasena
+	FROM	dbo.Tb_Paciente tp INNER JOIN
+			dbo.Tb_Tipo_Documento ttd ON ttd.Cod_Tipo_Documento = tp.Cod_Tipo_Documento
+	WHERE
+			tp.Cod_Paciente=@Cod_Paciente
+GO
+
+create procedure USP_obtener_codigo_TipDocumento
+@Desc_Corta varchar(15)
+as
+select Cod_Tipo_Documento from tb_tipo_Documento
+where Descripcion_Corta=@Desc_Corta AND Estado = 1
+go
+
+create procedure USP_Buscar_Odontologo
+@Cod_Odontologo CHAR(10)
+AS
+	SELECT	tp.Cod_Odontologo, tp.Nombres,tp.Ape_Paterno,tp.Ape_Materno Paciente, tp.Sexo, 
+			ttd.Descripcion_Corta, tp.Num_Documento, tp.Correo, tp.Direccion, tp.Cod_Departamento, 
+			tp.Cod_Provincia, tp.Cod_Distrito, tp.COP
+	FROM	dbo.Tb_Odontologo tp INNER JOIN
+			dbo.Tb_Tipo_Documento ttd ON ttd.Cod_Tipo_Documento = tp.Cod_Tipo_Documento
+	WHERE
+			tp.Cod_Odontologo=@Cod_Odontologo
+GO
+
 
 /***** TRIGGER *****/
 
@@ -2731,11 +2801,11 @@ EXEC dbo.USP_Insertar_Odontologo
 GO
 
 INSERT INTO dbo.Tb_Paciente VALUES
-('P000000001','José','Romero','Soto','M','TD001','54623659','jrsoto@gmail.com','AV Meza 3125','16','09','01',DEFAULT),
+('P000000001','José','Romero','Soto','M','TD001','54623659','jrsoto@gmail.com','AV Meza 3125','16','05','01',DEFAULT),
 ('P000000002','Laura','Castillo','Verategi','F','TD001','79812963','verategilau@outlook.com','Calle Colmena 113','15','10','06',DEFAULT),
-('P000000003','Victor','Contreras','Alcalde','M','TD001','01252389','vctorcon@outlook.com','Jr. Castilla 654','12','18','26',DEFAULT),
-('P000000004','Alexandra','Vento','Hidalgo','F','TD001','65712273','alevento@outlook.com','Calle Mariategui 602','13','05','20',DEFAULT),
-('P000000005','Daniel','Ardue','Pinto','M','TD001','85012346','dandue@outlook.com','Av Ica 3128','16','09','01',DEFAULT)
+('P000000003','Victor','Contreras','Alcalde','M','TD001','01252389','vctorcon@outlook.com','Jr. Castilla 654','12','05','03',DEFAULT),
+('P000000004','Alexandra','Vento','Hidalgo','F','TD001','65712273','alevento@outlook.com','Calle Mariategui 602','13','05','03',DEFAULT),
+('P000000005','Daniel','Ardue','Pinto','M','TD001','85012346','dandue@outlook.com','Av Ica 3128','16','06','04',DEFAULT)
 go
 
 INSERT INTO dbo.Tb_Horario VALUES
@@ -2773,3 +2843,4 @@ EXEC dbo.USP_Insertar_Usuario
 	@Nombres = 'Veronica',
 	@Apellidos = 'Lernaque'
 GO
+

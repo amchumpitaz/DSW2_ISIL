@@ -7,49 +7,49 @@ using Librerias.Isil.DentalSuite.Entidades;
 
 namespace Librerias.Isil.DentalSuite.ReglasNegocio
 {
-    public class brPaciente
+    public class brOdontologo
     {
-        public List<bePaciente> Listar()
+        public List<beOdontologo> Listar()
         {
-            List<bePaciente> lbePaciente = null;
+            List<beOdontologo> lbeOdontologo = null;
             string conexion = ConfigurationManager.ConnectionStrings["Dental"].ConnectionString;
             using (SqlConnection con = new SqlConnection(conexion))
             {
                 try
                 {
                     con.Open();
-                    daPaciente odaPaciente = new daPaciente();
-                    lbePaciente = odaPaciente.ListarPacientes(con);
+                    daOdontologo odaOdontologo = new daOdontologo();
+                    lbeOdontologo = odaOdontologo.ListarOdontologos(con);
                 }
                 catch (Exception ex)
                 {
                     throw ex;
                 }
             }
-            return lbePaciente;
+            return lbeOdontologo;
         }
 
-        public bePaciente buscarPaciente(string codigo)
+        public beOdontologo buscarOdontologo(string codigo)
         {
-            bePaciente obePaciente = null;
+            beOdontologo obeOdontologo = null;
             string conexion = ConfigurationManager.ConnectionStrings["Dental"].ConnectionString;
             using (SqlConnection con = new SqlConnection(conexion))
             {
                 try
                 {
                     con.Open();
-                    daPaciente odaPaciente = new daPaciente();
-                    obePaciente = odaPaciente.BuscarPaciente(con,codigo);
+                    daOdontologo odaOdontologo = new daOdontologo();
+                    obeOdontologo = odaOdontologo.BuscarOdontologo(con, codigo);
                 }
                 catch (Exception ex)
                 {
                     throw ex;
                 }
             }
-            return obePaciente;
+            return obeOdontologo;
         }
 
-        public bool EliminarPaciente(string codigo)
+        public bool EliminarOdontologo(string codigo)
         {
             bool exito = false;
             string conexion = ConfigurationManager.ConnectionStrings["Dental"].ConnectionString;
@@ -58,8 +58,8 @@ namespace Librerias.Isil.DentalSuite.ReglasNegocio
                 try
                 {
                     con.Open();
-                    daPaciente odaPaciente = new daPaciente();
-                    exito = odaPaciente.EliminarPaciente(con, codigo);
+                    daOdontologo odaOdontologo = new daOdontologo();
+                    exito = odaOdontologo.EliminarOdontologo(con, codigo);
                 }
                 catch (Exception ex)
                 {
@@ -69,7 +69,7 @@ namespace Librerias.Isil.DentalSuite.ReglasNegocio
             return exito;
         }
 
-        public bool ActualizarPaciente(bePaciente obePaciente)
+        public bool ActualizarOdontologo(beOdontologo obeOdontologo)
         {
             bool exito = false;
             string conexion = ConfigurationManager.ConnectionStrings["Dental"].ConnectionString;
@@ -78,8 +78,8 @@ namespace Librerias.Isil.DentalSuite.ReglasNegocio
                 try
                 {
                     con.Open();
-                    daPaciente odaPaciente = new daPaciente();
-                    exito = odaPaciente.ActualizarPaciente(con,obePaciente);
+                    daOdontologo odaOdontologo = new daOdontologo();
+                    exito = odaOdontologo.ActualizarOdontologo(con, obeOdontologo);
                 }
                 catch (Exception ex)
                 {
@@ -88,9 +88,5 @@ namespace Librerias.Isil.DentalSuite.ReglasNegocio
             }
             return exito;
         }
-
-
-
-        
     }
 }

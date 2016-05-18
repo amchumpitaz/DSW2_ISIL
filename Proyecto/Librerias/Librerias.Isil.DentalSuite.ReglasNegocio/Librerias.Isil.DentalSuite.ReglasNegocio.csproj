@@ -41,6 +41,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="brEspecialidad.cs" />
+    <Compile Include="brGenerales.cs" />
+    <Compile Include="brOdontologo.cs" />
     <Compile Include="brPaciente.cs" />
     <Compile Include="brUsuario.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
