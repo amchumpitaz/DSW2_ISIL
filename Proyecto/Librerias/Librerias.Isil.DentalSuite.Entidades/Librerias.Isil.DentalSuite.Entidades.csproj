@@ -39,9 +39,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="beCita.cs" />
     <Compile Include="beDepartamento.cs" />
     <Compile Include="beDistrito.cs" />
     <Compile Include="beEspecialidad.cs" />
+    <Compile Include="beHorarioOdontologo.cs" />
     <Compile Include="beOdontologo.cs" />
     <Compile Include="bePaciente.cs" />
     <Compile Include="beProvincia.cs" />
