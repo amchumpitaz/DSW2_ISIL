@@ -601,6 +601,31 @@ AS
 			tp.Cod_Odontologo=@Cod_Odontologo
 GO
 
+/***** VALIDAR *****/
+CREATE PROCEDURE USP_ValidarUsuario
+ @Usuario varchar(40),
+ @Contrasena varchar(40)
+AS
+	IF EXISTS(SELECT 1 FROM dbo.Tb_Usuario tu WHERE tu.Cod_Usuario = @Usuario AND Contrasena = HASHBYTES('sha1',@Contrasena))
+	BEGIN
+		SELECT tu.Nombres Nombre,tu.Apellidos Apellido,'Usuario' TipoUsuario FROM dbo.Tb_Usuario tu
+		WHERE tu.Cod_Usuario = @Usuario AND Contrasena = HASHBYTES('sha1',@Contrasena)
+		RETURN;
+	IF EXISTS(SELECT 1 FROM dbo.Tb_Paciente tp WHERE tp.Correo = @Usuario AND tp.Contrasena = HASHBYTES('sha1',@Contrasena))
+	BEGIN
+		SELECT tp.Nombres Nombre, tp.Ape_Paterno+' '+tp.Ape_Materno Apellido, 'Paciente' TipoUsuario FROM dbo.Tb_Paciente tp
+		WHERE tp.Correo = @Usuario AND tp.Contrasena = HASHBYTES('sha1',@Contrasena)
+		RETURN;
+	END
+	
+	IF EXISTS(SELECT 1 FROM dbo.Tb_Odontologo tod where tod.Correo = @Usuario and tod.Contrasena = HASHBYTES('sha1',@Contrasena))
+	BEGIN
+		SELECT tod.Nombres Nombre, tod.Ape_Paterno+' '+tod.Ape_Materno Apellido, 'Odontologo' TipoUsuario FROM Tb_Odontologo tod
+		where tod.Correo = @Usuario and tod.Contrasena = HASHBYTES('sha1',@Contrasena)
+		RETURN;
+	END
+END	
+GO
 
 /***** TRIGGER *****/
 
