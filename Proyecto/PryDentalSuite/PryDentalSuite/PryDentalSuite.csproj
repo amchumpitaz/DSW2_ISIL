@@ -76,6 +76,7 @@
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="Paginas\Citas\AgregarCita.aspx" />
     <Content Include="Paginas\Especialidad\ActualizarEspecialidad.aspx" />
     <Content Include="Paginas\Especialidad\AgregarEspecialidad.aspx" />
     <Content Include="Paginas\Especialidad\ListaEspecialidad.aspx" />
@@ -110,6 +111,13 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Paginas\Citas\AgregarCita.aspx.cs">
+      <DependentUpon>AgregarCita.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\Citas\AgregarCita.aspx.designer.cs">
+      <DependentUpon>AgregarCita.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Paginas\Especialidad\ActualizarEspecialidad.aspx.cs">
       <DependentUpon>ActualizarEspecialidad.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
