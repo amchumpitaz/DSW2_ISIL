@@ -68,6 +68,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Estilos\Login.css" />
     <Content Include="Estilos\Popup.css" />
     <Content Include="imagenes\delete.png" />
     <Content Include="imagenes\edit.png" />
@@ -80,9 +81,12 @@
     <Content Include="Paginas\Especialidad\ActualizarEspecialidad.aspx" />
     <Content Include="Paginas\Especialidad\AgregarEspecialidad.aspx" />
     <Content Include="Paginas\Especialidad\ListaEspecialidad.aspx" />
+    <Content Include="Paginas\Login\Login.aspx" />
     <Content Include="Paginas\MasterPages\Principal.Master" />
     <Content Include="Fonts\Play-Bold.ttf" />
     <Content Include="Fonts\Play-Regular.ttf" />
+    <Content Include="Fonts\helvetica-neue-bold.ttf" />
+    <Content Include="Fonts\helvetica-neue-medium.ttf" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -139,6 +143,14 @@
     <Compile Include="Paginas\Especialidad\ListaEspecialidad.aspx.designer.cs">
       <DependentUpon>ListaEspecialidad.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Paginas\Login\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\Login\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\Login\prueba.cs" />
     <Compile Include="Paginas\Odontologo\ActualizarOdontologo.aspx.cs">
       <DependentUpon>ActualizarOdontologo.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

@@ -1,0 +1,66 @@
+﻿@font-face {
+    font-family: helvetica-neue-bold;
+    src: url('../Fonts/helvetica-neue-bold.ttf') format('truetype');
+}
+::-webkit-input-placeholder {
+		font-size:1.1em;
+	 } 
+body {
+    position:absolute;
+	width:100%;
+	height:100%;
+	margin:0;
+	background-color:#000000;
+	background-color:rgba(0,0,0,0.8);
+	font-family: helvetica-neue-bold;
+}
+h1{
+    color:white;
+	text-align: center;
+	font-size:2em;	
+}
+hr{
+    width:300px;
+	color:white;
+}
+#contenido {
+    position:absolute;
+	width:300px;
+	color:white;
+    -webkit-box-shadow:0 0 20px blue;
+    -ms-box-shadow:0 0 20px blue;
+    box-shadow:0 0 20px blue;
+	top:calc(50% - 212px - 2em);
+	left:calc(50% - 151px - 2em);
+    -ms-border-radius:5px;
+    border-radius:5px;
+	padding:2em;
+}
+#txtUsuario,#txtContraseña {
+    margin-top:5px;
+	width:calc(100% - 10px);
+	font-family: helvetica-neue-bold;
+	font-size:1.1em;
+	height:40px;
+    -ms-border-radius:5px;
+    border-radius:5px;
+	padding-left:10px;
+	border:0;
+	outline:0;
+}
+#btnIngresar {
+    width:100%;
+	height: 50px;
+    background-color:blue;
+    color:white;
+    border:0;
+    font-family: helvetica-neue-bold;
+    font-size:1.1em;
+    -ms-border-radius:5px;
+    border-radius:5px;
+    outline:0;
+}
+
+#btn_Ingresar:active{
+    background-color:rgb(60, 112, 49);
+}	
