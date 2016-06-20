@@ -40,6 +40,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="daCita.cs" />
     <Compile Include="daConexion.cs" />
     <Compile Include="daEspecialidad.cs" />
     <Compile Include="daGenerales.cs" />

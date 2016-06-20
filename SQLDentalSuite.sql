@@ -627,6 +627,22 @@ AS
 END	
 GO
 
+/***** USP CITAS **/
+
+create procedure USP_Insertar_Cita
+@fecha DATE,
+@codEsp int,
+@codPac int,
+@codHorOdo int
+as
+	declare @cod int=(select isnull(max(Cod_Reserva_Cita),0) from dbo.Tb_Reserva_Cita)
+	set @cod=@cod+1;
+
+	insert into dbo.Tb_Reserva_Cita (Cod_Reserva_Cita,Fecha_Reserva,Cod_Especialidad,Cod_Paciente
+	,Cod_Horario_Odontologo)
+	values (@cod,@fecha,@codEsp,@codPac,@codHorOdo)
+GO
+
 /***** TRIGGER *****/
 
 CREATE TRIGGER dbo.TR_Eliminar_Especialidad

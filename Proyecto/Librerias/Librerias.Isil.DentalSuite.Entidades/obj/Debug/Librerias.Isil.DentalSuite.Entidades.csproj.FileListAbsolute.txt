@@ -7,3 +7,8 @@ C:\Users\Jeff\Source\Repos\DSW2_ISIL\Proyecto\Librerias\Librerias.Isil.DentalSui
 C:\Users\Jeff\Source\Repos\DSW2_ISIL\Proyecto\Librerias\Librerias.Isil.DentalSuite.Entidades\bin\Debug\Librerias.Isil.DentalSuite.Entidades.pdb
 C:\Users\Jeff\Source\Repos\DSW2_ISIL\Proyecto\Librerias\Librerias.Isil.DentalSuite.Entidades\obj\Debug\Librerias.Isil.DentalSuite.Entidades.dll
 C:\Users\Jeff\Source\Repos\DSW2_ISIL\Proyecto\Librerias\Librerias.Isil.DentalSuite.Entidades\obj\Debug\Librerias.Isil.DentalSuite.Entidades.pdb
+C:\Users\AMCHUMPI\Source\Repos\DSW2_ISIL\Proyecto\Librerias\Librerias.Isil.DentalSuite.Entidades\bin\Debug\Librerias.Isil.DentalSuite.Entidades.dll
+C:\Users\AMCHUMPI\Source\Repos\DSW2_ISIL\Proyecto\Librerias\Librerias.Isil.DentalSuite.Entidades\bin\Debug\Librerias.Isil.DentalSuite.Entidades.pdb
+C:\Users\AMCHUMPI\Source\Repos\DSW2_ISIL\Proyecto\Librerias\Librerias.Isil.DentalSuite.Entidades\obj\Debug\Librerias.Isil.DentalSuite.Entidades.csprojResolveAssemblyReference.cache
+C:\Users\AMCHUMPI\Source\Repos\DSW2_ISIL\Proyecto\Librerias\Librerias.Isil.DentalSuite.Entidades\obj\Debug\Librerias.Isil.DentalSuite.Entidades.dll
+C:\Users\AMCHUMPI\Source\Repos\DSW2_ISIL\Proyecto\Librerias\Librerias.Isil.DentalSuite.Entidades\obj\Debug\Librerias.Isil.DentalSuite.Entidades.pdb

@@ -25,3 +25,12 @@ C:\Users\Jeff\Source\Repos\DSW2_ISIL\Proyecto\Librerias\Librerias.Isil.DentalSui
 C:\Users\Jeff\Source\Repos\DSW2_ISIL\Proyecto\Librerias\Librerias.Isil.DentalSuite.ReglasNegocio\obj\Debug\Librerias.Isil.DentalSuite.ReglasNegocio.csprojResolveAssemblyReference.cache
 C:\Users\Jeff\Source\Repos\DSW2_ISIL\Proyecto\Librerias\Librerias.Isil.DentalSuite.ReglasNegocio\obj\Debug\Librerias.Isil.DentalSuite.ReglasNegocio.dll
 C:\Users\Jeff\Source\Repos\DSW2_ISIL\Proyecto\Librerias\Librerias.Isil.DentalSuite.ReglasNegocio\obj\Debug\Librerias.Isil.DentalSuite.ReglasNegocio.pdb
+C:\Users\AMCHUMPI\Source\Repos\DSW2_ISIL\Proyecto\Librerias\Librerias.Isil.DentalSuite.ReglasNegocio\bin\Debug\Librerias.Isil.DentalSuite.ReglasNegocio.dll
+C:\Users\AMCHUMPI\Source\Repos\DSW2_ISIL\Proyecto\Librerias\Librerias.Isil.DentalSuite.ReglasNegocio\bin\Debug\Librerias.Isil.DentalSuite.ReglasNegocio.pdb
+C:\Users\AMCHUMPI\Source\Repos\DSW2_ISIL\Proyecto\Librerias\Librerias.Isil.DentalSuite.ReglasNegocio\bin\Debug\Librerias.Isil.DentalSuite.Datos.dll
+C:\Users\AMCHUMPI\Source\Repos\DSW2_ISIL\Proyecto\Librerias\Librerias.Isil.DentalSuite.ReglasNegocio\bin\Debug\Librerias.Isil.DentalSuite.Entidades.dll
+C:\Users\AMCHUMPI\Source\Repos\DSW2_ISIL\Proyecto\Librerias\Librerias.Isil.DentalSuite.ReglasNegocio\bin\Debug\Librerias.Isil.DentalSuite.Datos.pdb
+C:\Users\AMCHUMPI\Source\Repos\DSW2_ISIL\Proyecto\Librerias\Librerias.Isil.DentalSuite.ReglasNegocio\bin\Debug\Librerias.Isil.DentalSuite.Entidades.pdb
+C:\Users\AMCHUMPI\Source\Repos\DSW2_ISIL\Proyecto\Librerias\Librerias.Isil.DentalSuite.ReglasNegocio\obj\Debug\Librerias.Isil.DentalSuite.ReglasNegocio.csprojResolveAssemblyReference.cache
+C:\Users\AMCHUMPI\Source\Repos\DSW2_ISIL\Proyecto\Librerias\Librerias.Isil.DentalSuite.ReglasNegocio\obj\Debug\Librerias.Isil.DentalSuite.ReglasNegocio.dll
+C:\Users\AMCHUMPI\Source\Repos\DSW2_ISIL\Proyecto\Librerias\Librerias.Isil.DentalSuite.ReglasNegocio\obj\Debug\Librerias.Isil.DentalSuite.ReglasNegocio.pdb
