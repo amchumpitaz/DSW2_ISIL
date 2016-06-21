@@ -632,7 +632,7 @@ GO
 create procedure USP_Insertar_Cita
 @fecha DATE,
 @codEsp int,
-@codPac int,
+@codPac char(10),
 @codHorOdo int
 as
 	declare @cod int=(select isnull(max(Cod_Reserva_Cita),0) from dbo.Tb_Reserva_Cita)
@@ -647,7 +647,7 @@ Create Procedure USP_Listar_Especialidad_cbo
 As
 	set nocount on;
 
-	select Cod_Especialidad,Descripcion
+	select Cod_Especialidad,Nombre
 	from Tb_Especialidad
 	where Estado=1
 GO
