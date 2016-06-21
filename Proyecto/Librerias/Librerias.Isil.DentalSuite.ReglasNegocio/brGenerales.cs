@@ -128,5 +128,25 @@ namespace Librerias.Isil.DentalSuite.ReglasNegocio
             }
             return lbeEspecialidad;
         }
+
+        public static List<beOdontologo> ListarOdontologoCbo()
+        {
+            List<beOdontologo> lbeOdontologo = null;
+            string conexion = ConfigurationManager.ConnectionStrings["Dental"].ConnectionString;
+            using (SqlConnection con = new SqlConnection(conexion))
+            {
+                try
+                {
+                    con.Open();
+                    daGenerales odaGenerales = new daGenerales();
+                    lbeOdontologo = odaGenerales.ListarOdontologoCBO(con);
+                }
+                catch (Exception ex)
+                {
+                    throw ex;
+                }
+            }
+            return lbeOdontologo;
+        }
     }
 }

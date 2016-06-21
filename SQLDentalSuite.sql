@@ -643,6 +643,23 @@ as
 	values (@cod,@fecha,@codEsp,@codPac,@codHorOdo)
 GO
 
+Create Procedure USP_Listar_Especialidad_cbo
+As
+	set nocount on;
+
+	select Cod_Especialidad,Descripcion
+	from Tb_Especialidad
+	where Estado=1
+GO
+
+create procedure USP_Listar_Odontologo_cbo
+AS
+	set nocount on;
+	select Cod_Odontologo, Nombres + ' ' + Ape_Paterno + ' '+ Ape_Materno 
+	from Tb_Odontologo
+	where Estado=1
+GO
+
 /***** TRIGGER *****/
 
 CREATE TRIGGER dbo.TR_Eliminar_Especialidad

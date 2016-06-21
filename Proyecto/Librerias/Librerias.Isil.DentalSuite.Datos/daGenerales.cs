@@ -184,5 +184,33 @@ namespace Librerias.Isil.DentalSuite.Datos
                 throw ex;
             }
         }
+
+        public List<beOdontologo> ListarOdontologoCBO(SqlConnection con)
+        {
+            List<beOdontologo> lbeOdontologo = null;
+            beOdontologo obeOdontologo = null;
+            try
+            {
+                SqlCommand cmd = new SqlCommand("USP_Listar_Odontologo_cbo", con);
+                cmd.CommandType = CommandType.StoredProcedure;
+                SqlDataReader drd = cmd.ExecuteReader();
+                if (drd != null)
+                {
+                    lbeOdontologo = new List<beOdontologo>();
+                    while (drd.Read())
+                    {
+                        obeOdontologo = new beOdontologo();
+                        obeOdontologo.Codigo = drd.GetString(0);
+                        obeOdontologo.Nombres = drd.GetString(1);
+                        lbeOdontologo.Add(obeOdontologo);
+                    }
+                }
+                return lbeOdontologo;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
     }
 }

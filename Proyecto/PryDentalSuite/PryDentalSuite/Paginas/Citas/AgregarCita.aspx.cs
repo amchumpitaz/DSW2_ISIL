@@ -13,7 +13,8 @@ namespace PryDentalSuite.Paginas.Citas
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            llenarComboEspecialidad();
+            llenarComboOdontologo();
         }
 
         protected void btnConfirmarCita_Click(object sender, EventArgs e)
@@ -40,6 +41,16 @@ namespace PryDentalSuite.Paginas.Citas
             cboEspecialidad.DataValueField = "Cod_Especialidad";
             cboEspecialidad.DataTextField = "Nombre";
             cboEspecialidad.DataBind();
+        }
+
+        private void llenarComboOdontologo()
+        {
+            List<beOdontologo> lbeOdontologo = null;
+            lbeOdontologo = brGenerales.ListarOdontologoCbo();
+            cboOdontologo.DataSource = lbeOdontologo;
+            cboOdontologo.DataValueField = "Codigo";
+            cboOdontologo.DataTextField = "Nombres";
+            cboOdontologo.DataBind();
         }
     }
 }
