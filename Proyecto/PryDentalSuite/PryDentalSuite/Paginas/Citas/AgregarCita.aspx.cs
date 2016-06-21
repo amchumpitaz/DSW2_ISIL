@@ -32,9 +32,10 @@ namespace PryDentalSuite.Paginas.Citas
             {
                 obrCita = new brCita();
                 obeCita = new beCita();
-                obeCita.CodigoEspecialidad = cboEspecialidad.SelectedValue;
-                obeCita.CodigoHorarioOdontologo = cboHorario.SelectedValue;
+                obeCita.CodigoEspecialidad = int.Parse(cboEspecialidad.SelectedValue);
+                obeCita.CodigoHorarioOdontologo = int.Parse(cboHorario.SelectedValue);
                 obeCita.FechaCita = DateTime.Now;
+                obeCita.CodigoPaciente = "P000000001";
                 if (!obrCita.AgregarCita(obeCita))
                 {
                     brGenerales.mostrarMensaje("No se pudo agregar la cita.");

@@ -671,6 +671,8 @@ As
 	ho.Cod_Odontologo=@cod_odonto
 Go
 
+exec USP_Insertar_Horario_Odontologico 'O000000001', 1
+
 
 
 /***** TRIGGER *****/

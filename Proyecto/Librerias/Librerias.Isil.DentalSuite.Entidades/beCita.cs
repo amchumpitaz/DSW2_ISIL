@@ -8,11 +8,11 @@ namespace Librerias.Isil.DentalSuite.Entidades
 {
     public class beCita
     {
-        public string CodigoCita { get; set; }
+        public int CodigoCita { get; set; }
         public DateTime FechaCita { get; set; }
-        public string CodigoEspecialidad { get; set; }
+        public int CodigoEspecialidad { get; set; }
         public string CodigoPaciente { get; set; }
-        public string CodigoHorarioOdontologo {get;set;}
+        public int CodigoHorarioOdontologo {get;set;}
         public byte Estado { get; set; }     
     }
 }
