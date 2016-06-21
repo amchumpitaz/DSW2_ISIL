@@ -168,5 +168,14 @@ namespace Librerias.Isil.DentalSuite.ReglasNegocio
             }
             return lbeHorarioOdontologo;
         }
+
+        public static string mostrarMensaje(string mens)
+        {
+            string mensaje = "";
+            mensaje += "<script>alert('";
+            mensaje += mens;
+            mensaje += "')</script>";
+            return mensaje;
+        }
     }
 }

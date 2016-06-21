@@ -8,7 +8,7 @@ namespace Librerias.Isil.DentalSuite.Entidades
 {
     public class beHorarioOdontologo
     {
-        public string CodigoHorarioOdontologo { get; set; }
+        public int CodigoHorarioOdontologo { get; set; }
         public string CodigoOdontologo { get; set; }
         public string CodigoHorario { get; set; }
         public DateTime FechaRegistro { get; set; }

@@ -229,7 +229,7 @@ namespace Librerias.Isil.DentalSuite.Datos
                     while (drd.Read())
                     {
                         obeHorarioOdontologo = new beHorarioOdontologo();
-                        obeHorarioOdontologo.CodigoHorarioOdontologo = drd.GetString(0);
+                        obeHorarioOdontologo.CodigoHorarioOdontologo = drd.GetInt32(0);
                         obeHorarioOdontologo.Detalle = drd.GetString(1);
                         lbeHorarioOdontologo.Add(obeHorarioOdontologo);
                     }
