@@ -72,7 +72,7 @@
         </tr>
         <tr>
             <td class="auto-style15">
-                <asp:Button ID="btnConfirmarCita" runat="server" Text="Confirmar Cita" Width="145px" />
+                <asp:Button ID="btnConfirmarCita" runat="server" Text="Confirmar Cita" Width="145px" OnClick="btnConfirmarCita_Click" />
             </td>
             <td class="auto-style21">&nbsp;</td>
             <td>&nbsp;</td>

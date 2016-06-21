@@ -156,5 +156,33 @@ namespace Librerias.Isil.DentalSuite.Datos
                 throw ex;
             }
         }
+
+        public List<beEspecialidad> ListarEspecialidadCBO(SqlConnection con)
+        {
+            List<beEspecialidad> lbeEspecialidad = null;
+            beEspecialidad obeEspecialidad = null;
+            try
+            {
+                SqlCommand cmd = new SqlCommand("USP_Listar_Especialidad_cbo",con);
+                cmd.CommandType = CommandType.StoredProcedure;
+                SqlDataReader drd = cmd.ExecuteReader();
+                if (drd != null)
+                {
+                    lbeEspecialidad = new List<beEspecialidad>();
+                    while (drd.Read())
+                    {
+                        obeEspecialidad = new beEspecialidad();
+                        obeEspecialidad.Cod_Especialidad = drd.GetInt32(0);
+                        obeEspecialidad.Nombre = drd.GetString(1);
+                        lbeEspecialidad.Add(obeEspecialidad);
+                    }
+                }
+                return lbeEspecialidad;
+            }
+            catch(Exception ex)
+            {
+                throw ex;
+            }
+        }
     }
 }
