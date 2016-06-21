@@ -47,7 +47,7 @@
         <tr>
             <td class="auto-style15">Escoge al Odontólogo:</td>
             <td class="auto-style21">
-                <asp:DropDownList ID="cboOdontologo" runat="server" Height="28px" Width="298px">
+                <asp:DropDownList ID="cboOdontologo" runat="server" Height="28px" Width="298px" AutoPostBack="True" OnSelectedIndexChanged="cargaComboHorario">
                 </asp:DropDownList>
             </td>
             <td>&nbsp;</td>

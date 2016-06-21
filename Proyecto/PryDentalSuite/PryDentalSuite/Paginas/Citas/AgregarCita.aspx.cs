@@ -52,5 +52,22 @@ namespace PryDentalSuite.Paginas.Citas
             cboOdontologo.DataTextField = "Nombres";
             cboOdontologo.DataBind();
         }
+
+        private void llenarComboHorario(string codOdontologo)
+        {
+            List<beHorarioOdontologo> lbeHorarioOdontologo = null;
+            lbeHorarioOdontologo = brGenerales.ListarHorarioOdontologoCbo(codOdontologo);
+            cboHorario.DataSource = lbeHorarioOdontologo;
+            cboHorario.DataValueField = "CodigoHorarioOdontologo";
+            cboHorario.DataTextField = "Detalle";
+            cboHorario.DataBind();
+        }
+
+        protected void cargaComboHorario(object sender, EventArgs e)
+        {
+            string codOdontologo = "";
+            codOdontologo = cboOdontologo.SelectedValue;
+            llenarComboHorario(codOdontologo);
+        }
     }
 }

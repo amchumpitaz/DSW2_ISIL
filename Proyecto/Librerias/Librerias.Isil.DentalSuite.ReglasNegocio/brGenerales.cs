@@ -148,5 +148,25 @@ namespace Librerias.Isil.DentalSuite.ReglasNegocio
             }
             return lbeOdontologo;
         }
+
+        public static List<beHorarioOdontologo> ListarHorarioOdontologoCbo(string codOdontologo)
+        {
+            List<beHorarioOdontologo> lbeHorarioOdontologo = null;
+            string conexion = ConfigurationManager.ConnectionStrings["Dental"].ConnectionString;
+            using (SqlConnection con = new SqlConnection(conexion))
+            {
+                try
+                {
+                    con.Open();
+                    daGenerales odaGenerales = new daGenerales();
+                    lbeHorarioOdontologo = odaGenerales.ListarHorarioOdontologoCBO(con, codOdontologo);
+                }
+                catch (Exception ex)
+                {
+                    throw ex;
+                }
+            }
+            return lbeHorarioOdontologo;
+        }
     }
 }

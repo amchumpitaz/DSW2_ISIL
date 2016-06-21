@@ -212,5 +212,34 @@ namespace Librerias.Isil.DentalSuite.Datos
                 throw ex;
             }
         }
+
+        public List<beHorarioOdontologo> ListarHorarioOdontologoCBO(SqlConnection con, string codOdontologo)
+        {
+            List<beHorarioOdontologo> lbeHorarioOdontologo = null;
+            beHorarioOdontologo obeHorarioOdontologo = null;
+            try
+            {
+                SqlCommand cmd = new SqlCommand("USP_Listar_Horario_Odontologo_Cbo", con);
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@cod_odonto",codOdontologo);
+                SqlDataReader drd = cmd.ExecuteReader();
+                if (drd != null)
+                {
+                    lbeHorarioOdontologo = new List<beHorarioOdontologo>();
+                    while (drd.Read())
+                    {
+                        obeHorarioOdontologo = new beHorarioOdontologo();
+                        obeHorarioOdontologo.CodigoHorarioOdontologo = drd.GetString(0);
+                        obeHorarioOdontologo.Detalle = drd.GetString(1);
+                        lbeHorarioOdontologo.Add(obeHorarioOdontologo);
+                    }
+                }
+                return lbeHorarioOdontologo;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
     }
 }

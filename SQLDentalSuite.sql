@@ -660,6 +660,19 @@ AS
 	where Estado=1
 GO
 
+
+create procedure USP_Listar_Horario_Odontologo_Cbo
+@cod_odonto as char(10)
+As
+	select ho.Cod_Horario_Odontologo, cast(h.Dia as varchar) + ' ' + cast(h.Hora_Inicio as varchar) +' - ' + cast(h.Hora_Fin as varchar) 
+	from Tb_Horario_Odontologo ho 
+	inner join Tb_Horario h on ho.Cod_Horario=h.Cod_Horario
+	where 
+	ho.Cod_Odontologo=@cod_odonto
+Go
+
+
+
 /***** TRIGGER *****/
 
 CREATE TRIGGER dbo.TR_Eliminar_Especialidad
