@@ -29,6 +29,7 @@ namespace PryDentalSuite.Paginas.Login
                     Session["Nombre"] = _beLogin.Nombre;
                     Session["Apellido"] = _beLogin.Apellido;
                     Session["TipoUsuario"] = _beLogin.TipoUsuario;
+                    Session["Codigo"] = _beLogin.Codigo;
                     var tipoUsuario = _beLogin.TipoUsuario;
                     switch (tipoUsuario)
                     {

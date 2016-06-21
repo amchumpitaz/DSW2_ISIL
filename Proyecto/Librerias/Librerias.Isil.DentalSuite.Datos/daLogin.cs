@@ -27,6 +27,7 @@ namespace Librerias.Isil.DentalSuite.Datos
                         if (drd.HasRows)
                         {
                             drd.Read();
+                            obeLogin.Codigo = drd.GetValue(drd.GetOrdinal("Nombre")).ToString();
                             obeLogin.Nombre = drd.GetValue(drd.GetOrdinal("Nombre")).ToString();
                             obeLogin.Apellido = drd.GetValue(drd.GetOrdinal("Apellido")).ToString();
                             obeLogin.TipoUsuario = drd.GetValue(drd.GetOrdinal("TipoUsuario")).ToString();
